@@ -1,0 +1,20 @@
+@import "mixins";
+@import "variables";
+@import "components/main";
+@import "components/section";
+@import "components/footer";
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: $primary-color;
+  max-height: 660px;
+}

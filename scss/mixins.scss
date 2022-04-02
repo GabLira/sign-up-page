@@ -1,0 +1,13 @@
+//functions
+
+@mixin ds-flx($flx: flex, $cntr: center) {
+  display: $flx;
+  align-items: $cntr;
+  justify-content: $cntr;
+}
+
+@mixin p-cls($cnt: "", $abslt: absolute) {
+  content: $cnt;
+  position: $abslt;
+  left: 8px;
+}

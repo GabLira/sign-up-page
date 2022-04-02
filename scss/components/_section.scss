@@ -1,0 +1,63 @@
+.layout__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 91.5vh;
+  background: $primary-color-dark;
+
+  &::after {
+    @include p-cls;
+    bottom: 1px;
+    z-index: 0;
+    border-bottom: 596px solid transparent;
+    border-right: 272px solid transparent;
+    background: $primary-color-dark;
+  }
+}
+
+.card {
+  height: 90vh;
+  overflow: clip;
+  box-shadow: 2px 6px 11px  $opacity-color;
+
+  &::before {
+    @include p-cls;
+    bottom: 57px;
+    z-index: 3;
+    border-bottom: 520px solid $primary-color;
+    border-right: 264px solid transparent;
+  }
+
+  &__background {
+    @include ds-flx;
+    position: relative;
+    width: 100vw;
+    bottom: 8px;
+    height: 92vh;
+    right: 8px;
+    background: $primary-color-dark;
+
+    &::before {
+      @include p-cls;
+      bottom: 80px;
+      z-index: 2;
+      border-right: 240px solid transparent;
+      border-bottom: 465px solid $primary-color-dark;
+
+    }
+
+    &--img {
+      @include ds-flx;
+      height: 260px;
+      position: relative;
+      right: 0;
+      bottom: 100px;
+
+      .img_museum {
+        width: 275px;
+        padding: 15px;
+      }
+    }
+  }
+}
+

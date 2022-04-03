@@ -10,6 +10,16 @@
   box-shadow: 3px 4px 10px #00000040;
   background: #fff;
 }
+@media screen and (min-width: 360px) {
+  .container {
+    bottom: 380px;
+  }
+}
+@media screen and (min-width: 390px) {
+  .container {
+    bottom: 26em;
+  }
+}
 .container__form {
   display: flex;
   flex-wrap: wrap;
@@ -31,9 +41,6 @@
   transform: translateY(-12px) scale(0.7);
   transform-origin: left;
   color: #53a8c7;
-}
-.container__form--camps:not(:placeholder-shown) {
-  color: #b1b1b1b0;
 }
 .container__form--label {
   position: relative;
@@ -79,6 +86,25 @@
   border-right: 272px solid transparent;
   background: #deb887;
 }
+@media screen and (min-width: 360px) {
+  .layout__background::after {
+    left: 8px;
+    bottom: 2px;
+    border-bottom: 674px solid transparent;
+    border-right: 352px solid transparent;
+  }
+}
+@media screen and (min-width: 370px) {
+  .layout__background::after {
+    border-right: 367px solid transparent;
+  }
+}
+@media screen and (min-width: 390px) {
+  .layout__background::after {
+    border-right: 22.5em solid transparent;
+    border-bottom: 46em solid transparent;
+  }
+}
 
 .card {
   height: 90vh;
@@ -94,6 +120,28 @@
   border-bottom: 520px solid #efebe9;
   border-right: 264px solid transparent;
 }
+@media screen and (min-width: 360px) {
+  .card::before {
+    bottom: 65px;
+  }
+}
+@media screen and (min-width: 370px) {
+  .card::before {
+    bottom: 60px;
+    border-bottom: 525px solid #efebe9;
+  }
+}
+@media screen and (min-width: 390px) {
+  .card::before {
+    bottom: 75px;
+    border-bottom: 660px solid #efebe9;
+  }
+}
+@media screen and (min-width: 410px) {
+  .card::before {
+    bottom: 77.8px;
+  }
+}
 .card__background {
   display: flex;
   align-items: center;
@@ -105,6 +153,11 @@
   right: 8px;
   background: #deb887;
 }
+@media screen and (min-width: 360px) {
+  .card__background {
+    height: 92vh;
+  }
+}
 .card__background::before {
   content: "";
   position: absolute;
@@ -114,18 +167,44 @@
   border-right: 240px solid transparent;
   border-bottom: 465px solid #deb887;
 }
+@media screen and (min-width: 360px) {
+  .card__background::before {
+    bottom: 88px;
+  }
+}
+@media screen and (min-width: 390px) {
+  .card__background::before {
+    bottom: 74px;
+    border-bottom: 630px solid #deb887;
+  }
+}
 .card__background--img {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 260px;
   position: relative;
-  right: 0;
+  right: 10px;
   bottom: 100px;
+}
+@media screen and (min-width: 360px) {
+  .card__background--img {
+    bottom: 108px;
+  }
+}
+@media screen and (min-width: 390px) {
+  .card__background--img {
+    bottom: 116px;
+  }
 }
 .card__background--img .img_museum {
   width: 275px;
   padding: 15px;
+}
+@media screen and (min-width: 390px) {
+  .card__background--img .img_museum {
+    width: 340px;
+  }
 }
 
 .footer {
@@ -148,7 +227,7 @@ html {
 
 body {
   background: #efebe9;
-  max-height: 660px;
+  max-width: 1240px;
 }
 
 /*# sourceMappingURL=main.css.map */

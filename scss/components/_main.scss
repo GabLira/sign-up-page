@@ -8,6 +8,14 @@
   box-shadow: 3px 4px 10px $secondary-color;
   background: $primary-color-light;
 
+  @media screen and (min-width: 360px) {
+    bottom: 380px;
+  }
+  @media screen and (min-width: 390px) {
+    bottom: 26em;//bottom: 455px;
+  }
+
+
   &__form {
     display: flex;
     flex-wrap: wrap;
@@ -28,14 +36,10 @@
     }
 
     &--camps:focus + &--label,
-    &--camps:not(:placeholder-shown) + &--label{
+    &--camps:not(:placeholder-shown) + &--label {
       transform: translateY(-12px) scale(.7);
       transform-origin: left;
       color: $primary-accent-color;
-    }
-
-    &--camps:not(:placeholder-shown) {
-      color: $border-color;
     }
 
     &--label {

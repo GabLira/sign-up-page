@@ -12,13 +12,27 @@
     border-bottom: 596px solid transparent;
     border-right: 272px solid transparent;
     background: $primary-color-dark;
+
+    @media screen and (min-width: 360px) {
+      left: 8px;
+      bottom: 2px;
+      border-bottom: 674px solid transparent;
+      border-right: 352px solid transparent;
+    }
+    @media screen and (min-width: 370px) {
+      border-right: 367px solid transparent;
+    }
+    @media screen and (min-width: 390px) {
+      border-right: 22.5em solid transparent;
+      border-bottom: 46em solid transparent;
+    }
   }
 }
 
 .card {
   height: 90vh;
   overflow: clip;
-  box-shadow: 2px 6px 11px  $opacity-color;
+  box-shadow: 2px 6px 11px $opacity-color;
 
   &::before {
     @include p-cls;
@@ -26,6 +40,21 @@
     z-index: 3;
     border-bottom: 520px solid $primary-color;
     border-right: 264px solid transparent;
+
+    @media screen and (min-width: 360px) {
+      bottom: 65px;
+    }
+    @media screen and (min-width: 370px) {
+      bottom: 60px;
+      border-bottom: 525px solid $primary-color;
+    }
+    @media screen and (min-width: 390px) {
+      bottom: 75px;//75px
+      border-bottom: 660px solid $primary-color;
+    }
+    @media screen and (min-width: 410px) {
+      bottom: 77.8px;//75px
+    }
   }
 
   &__background {
@@ -37,6 +66,10 @@
     right: 8px;
     background: $primary-color-dark;
 
+    @media screen and (min-width: 360px) {
+      height: 92vh;
+    }
+
     &::before {
       @include p-cls;
       bottom: 80px;
@@ -44,18 +77,35 @@
       border-right: 240px solid transparent;
       border-bottom: 465px solid $primary-color-dark;
 
+      @media screen and (min-width: 360px) {
+        bottom: 88px;
+      }
+      @media screen and (min-width: 390px) {
+        bottom: 74px;
+        border-bottom: 630px solid $primary-color-dark;
+      }
     }
 
     &--img {
       @include ds-flx;
       height: 260px;
       position: relative;
-      right: 0;
+      right: 10px;
       bottom: 100px;
+
+      @media screen and (min-width: 360px) {
+        bottom: 108px;
+      }
+      @media screen and (min-width: 390px) {
+        bottom: 116px;
+      }
 
       .img_museum {
         width: 275px;
         padding: 15px;
+        @media screen and (min-width: 390px) {
+          width: 340px;
+        }
       }
     }
   }

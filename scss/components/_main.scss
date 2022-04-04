@@ -3,16 +3,24 @@
   position: relative;
   height: 260px;
   bottom: 350px;
+  margin: 0 auto;
   width: 100%;
   z-index: 3;
   box-shadow: 3px 4px 10px $secondary-color;
   background: $primary-color-light;
 
   @media screen and (min-width: 360px) {
+    width: 80%;
     bottom: 380px;
   }
   @media screen and (min-width: 390px) {
     bottom: 26em;//bottom: 455px;
+  }
+  @media screen and (min-width: 480px) {
+    width: 70%;
+  }
+  @media screen and (min-width: 480px) {
+    width: 40%;
   }
 
 
@@ -47,7 +55,7 @@
       cursor: pointer;
       bottom: 50px;
       left: 5px;
-      font-size: .75rem;
+      font-size: .72rem;
       color: $primary-text-color;
       transform: translateY(10px);
       transition: trasform .5s, $primary-accent-color .3s;
